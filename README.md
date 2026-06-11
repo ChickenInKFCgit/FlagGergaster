@@ -7,3 +7,6 @@ Le scrapping en question permet de récupérer des annonces postées sur des sit
 - L'utilisateur choisit des filtres qu'il applique via le chatbot sur discord
 - Le résultat du scrapping est actualisé ponctuellement, ex 24h
 - Le résultat du scrapping est affiché via un dashboard, qui montre les candidats potentiels. L'utilisateur peut choisir de les refuser ce qui va les "shadow-ban".
+
+# Note Personelle
+https://scrape.do/blog/how-to-scrape-javascript-rendered-web-pages-with-python/
