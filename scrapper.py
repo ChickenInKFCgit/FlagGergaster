@@ -1,0 +1,1 @@
+# va scrapper des sites dynamiques qui utilisent javascript. c'est du costaud.

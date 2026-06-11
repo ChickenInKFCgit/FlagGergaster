@@ -1,0 +1,1 @@
+# traite de l'objet annonce. Est en fait un bout du resultat du scrapping
