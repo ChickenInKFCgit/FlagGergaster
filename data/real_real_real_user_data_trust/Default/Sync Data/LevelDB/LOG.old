@@ -1,2 +1,3 @@
-2026/06/15-23:11:16.082 2454 Creating DB C:\Users\LinkT\Documents\PERSO\Logiciels\Nouveau dossier\FlagGergaster\data\real_real_real_user_data_trust\Default\Sync Data\LevelDB since it was missing.
-2026/06/15-23:11:16.117 2454 Reusing MANIFEST C:\Users\LinkT\Documents\PERSO\Logiciels\Nouveau dossier\FlagGergaster\data\real_real_real_user_data_trust\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/06/15-23:16:40.229 1ba8 Reusing MANIFEST C:\Users\LinkT\Documents\PERSO\Logiciels\Nouveau dossier\FlagGergaster\data\real_real_real_user_data_trust\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/06/15-23:16:40.233 1ba8 Recovering log #3
+2026/06/15-23:16:40.234 1ba8 Reusing old log C:\Users\LinkT\Documents\PERSO\Logiciels\Nouveau dossier\FlagGergaster\data\real_real_real_user_data_trust\Default\Sync Data\LevelDB/000003.log 

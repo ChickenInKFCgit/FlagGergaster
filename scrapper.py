@@ -12,6 +12,7 @@ from playwright.sync_api import sync_playwright
 
 # Fonctions utilitaires
 def wait(pfDureeMin:int, pfDureeMax:int):
+    """ Attend une durée aléatoire, ebtre pfDureeMin et pffDureeMax, en milisecondes."""
     duree = randint(pfDureeMin, pfDureeMax) * 0.001
     t.sleep(duree)
 
@@ -41,14 +42,21 @@ class Scrapper:
         self.contexte = self.__launch()
 
         self.simuler_navigation(siteURL)
+
+        #permet d'empecher l'instakill de la fenêtre
+        while (not self.page.is_closed()):
+            t.sleep(1)
         
 
     def simuler_navigation(self, siteURL:str):
-        page = self.contexte.new_page()
-
-        page.goto(siteURL)
+        """
+        permet de simuler la visite du vrai site. Ainsi, moins de chance de se faire flag
+        """
+        self.page = self.contexte.new_page()
+        wait(self.delaimin, self.delaimax)
+        self.page.goto(siteURL)
         print(siteURL.split("/"))
-        t.sleep(10)
+        
     
     def fausser_credibilite_navigateur(self):
         self.fill_user_data_dir()
