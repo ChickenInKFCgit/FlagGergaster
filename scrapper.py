@@ -13,7 +13,7 @@ from playwright.sync_api import sync_playwright
 # Fonctions utilitaires
 def wait(pfDureeMin:int, pfDureeMax:int):
     """ Attend une durée aléatoire, ebtre pfDureeMin et pffDureeMax, en milisecondes."""
-    duree = randint(pfDureeMin, pfDureeMax) * 0.001
+    duree = randint(pfDureeMin, pfDureeMax) * 0.01
     t.sleep(duree)
 
 #Scrapper
@@ -45,7 +45,7 @@ class Scrapper:
 
         #permet d'empecher l'instakill de la fenêtre
         while (not self.page.is_closed()):
-            t.sleep(1)
+            t.sleep(0)
         
 
     def simuler_navigation(self, siteURL:str):
